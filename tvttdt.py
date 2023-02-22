@@ -56,4 +56,5 @@ ambito = st.selectbox('Selecciona Ambito', ambitos)
 # st.write(get_canales(data, zona, ambito))
 canales = get_canales(data, zona, ambito)
 for c in canales:
-    st.markdown(f'[{c["name"]}]({c["url"]})')
+    imagen = f'![{c["name"]}]({c["logo"]})'
+    st.markdown(f'[{imagen}]({c["url"]})')
